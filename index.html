@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOYENNE DE TRIMESTER</title>
+    <script src="fonction.js"></script>
+    <link rel="stylesheet" href="stylecalculme.css" />
+  </head>
+  <body>
+<a href="https://instagram.com" class="ig-icon" aria-label="Instagram" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.2 2.3.4.6.2 1 .5 1.5 1 .5.5.8.9 1 1.5.2.4.3 1.1.4 2.3.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.9-.4 2.3-.2.6-.5 1-.9 1.5-.5.5-.9.8-1.5 1-.4.2-1.1.3-2.3.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.2-2.3-.4-.6-.2-1-.5-1.5-.9-.5-.5-.8-.9-1-1.5-.2-.4-.3-1.1-.4-2.3-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.2-1.9.4-2.3.2-.6.5-1 .9-1.5.5-.5.9-.8 1.5-1 .4-.2 1.1-.3 2.3-.4 1.3-.1 1.7-.1 4.9-.1zm0 3.6a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-10.9a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8z"/>
+  </svg>
+</a>
+<a href="https://facebook.com" class="ig-icon" aria-label="Instagram" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M22.7 0H1.3C.6 0 0 .6 0 1.3v21.3C0 23.4.6 24 1.3 24h11.5v-9.3H9.7v-3.6h3.1V8.4c0-3.1 1.9-4.8 4.6-4.8 1.3 0 2.4.1 2.7.1v3.2h-1.9c-1.5 0-1.8.7-1.8 1.8v2.4h3.6l-.5 3.6h-3.1V24h6.1c.7 0 1.3-.6 1.3-1.3V1.3C24 .6 23.4 0 22.7 0z"/>
+  </svg>
+</a>
+    <h1>Welcome!!To</h1>
+    <h2 class="h2moy">
+      <strong> حساب معدل الثلاثي(سنة ثالثة اعلامية) </strong>
+    </h2>
+    <form>
+      <h2>arabia:</h2>
+      <div>Orale:</div>
+      <span> <input type="number" id="OraleA" /><br /><br /> </span>
+      <div>controle:</div>
+      <span> <input type="number" id="controleA" /><br /><br /> </span>
+      <div>Synthése:</div>
+      <span> <input type="number" id="SynthéseA" /><br /><br /> </span>
+      <input
+        class="inputbutton"
+        type="button"
+        value="calcul"
+        onclick="calculerAR()"
+      /><br />
+      <strong>Resultat: </strong><br />
+      <span> <input type="number" id="Resultat A" /><br /><br /> </span>
+      <h2>francais:</h2>
+      <div>Orale:</div>
+      <span><input type="number" id="Oralef" /><br /><br /></span>
+      <div>controle:</div>
+      <span> <input type="number" id="controlef" /><br /><br /> </span>
+      <div>Synthése:</div>
+      <span> <input type="number" id="Synthésef" /><br /><br /> </span>
+      <input
+        class="inputbutton"
+        type="button"
+        value="calcul"
+        onclick="calculerFR()"
+      /><br />
+      <strong>Resultat: </strong><br />
+      <span> <input type="number" id="Resultat f" /><br /><br /> </span>
+      <h2>englais:</h2>
+      <div>Orale:</div>
+      <span> <input type="number" id="Oralee" /><br /><br /> </span>
+      <div>controle:</div>
+      <span> <input type="number" id="controlee" /><br /><br /> </span>
+      <div>Synthése:</div>
+      <span> <input type="number" id="Synthésee" /><br /><br /> </span>
+      <input
+        class="inputbutton"
+        type="button"
+        value="calcul"
+        onclick="calculerEG()"
+      /><br />
+      <strong>Resultat: </strong><br />
+      <span> <input type="number" id="Resultat e" /><br /><br /> </span>
+      <h2>math:</h2>
+      <div>controle:</div>
+      <span> <input type="number" id="controlem" /><br /><br /> </span>
+      <div>Synthése:</div>
+      <input type="number" id="Synthésem" /><br /><br />
+      <input
+        class="inputbutton"
+        type="button"
+        value="calcul"
+        onclick="calculerM()"
+      /><br />
+      <strong>Resultat:</strong><br />
+      <span> <input type="number" id="Resultat m" /><br /><br /> </span>
+      <h2>physique:</h2>
+      <div>tp:</div>
+      <span> <input type="number" id="tp" /><br /><br /> </span>
+      <div>controle:</div>
+      <span> <input type="number" id="controlephy" /><br /><br /> </span>
+      <div>Synthése:</div>
+      <span> <input type="number" id="Synthéseephy" /><br /><br /> </span>
+      <input
+        class="inputbutton"
+        type="button"
+        value="calcul"
+        onclick="calculerphy()"
+      /><br />
+      <strong>Resultat: </strong><br />
+      <span> <input type="number" id="Resultat phy" /><br /><br /> </span>
+      <h2>phylosophy:</h2>
+      <div>Synthése:</div>
+      <span> <input type="number" id="Synthéseephyl" /><br /><br /> </span>
+      <input
+        class="inputbutton"
+        type="button"
+        value="calcul"
+        onclick="calculerphyl()"
+      /><br />
+      <strong>Resultat: </strong><br />
+      <span> <input type="number" id="Resultat phyl" /><br /><br /> </span>
+      <h2>history:</h2>
+      <div>Orale:</div>
+      <span> <input type="number" id="Oraleh" /><br /><br /> </span>
+      <div>controle:</div>
+      <span> <input type="number" id="controleh" /><br /><br /> </span>
+      <div>Synthése:</div>
+      <span> <input type="number" id="Synthéseh" /><br /><br /> </span>
+      <span>
+        <input
+          class="inputbutton"
+          type="button"
+          value="calcul"
+          onclick="calculerhis()"
+        /><br />
+      </span>
+      <strong>Resultat: </strong><br />
+      <span> <input type="number" id="Resultat h" /><br /><br /> </span>
+      <h2>joghgraphy:</h2>
+      <div>Orale:</div>
+      <span> <input type="number" id="Oralejogh" /><br /><br /> </span>
+      <div>controle:</div>
+      <span> <input type="number" id="controlejogh" /><br /><br /> </span>
+      <div>Synthése:</div>
+      <span> <input type="number" id="Synthésejogh" /><br /><br /> </span>
+      <span>
+        <input
+          class="inputbutton"
+          type="button"
+          value="calcul"
+          onclick="calculerjogh()"
+        /><br />
+      </span>
+      <strong>Resultat: </strong><br />
+      <span> <input type="number" id="Resultat jogh" /><br /><br /> </span>
+      <h2>programmation:</h2>
+      <div>TP:</div>
+      <span> <input type="number" id="tpprog" /><br /><br /> </span>
+      <div>controle:</div>
+      <span> <input type="number" id="controleprog" /><br /><br /> </span>
+      <div>Synthése:</div>
+      <span> <input type="number" id="Synthéseprog" /><br /><br /> </span>
+      <span>
+        <input
+          class="inputbutton"
+          type="button"
+          value="calcul"
+          onclick="calculerprog()"
+        /><br />
+      </span>
+      <strong>Resultat: </strong><br />
+      <span> <input type="number" id="Resultat prog" /><br /><br /> </span>
+      <h2>STI:</h2>
+      <div>TP:</div>
+      <span> <input type="number" id="tpsti" /><br /><br /> </span>
+      <div>controle:</div>
+      <span> <input type="number" id="controlesti" /><br /><br /> </span>
+      <div>Synthése:</div>
+      <span> <input type="number" id="Synthésesti" /><br /><br /> </span>
+      <input
+        class="inputbutton"
+        type="button"
+        value="calcul"
+        onclick="calculersti()"
+      /><br />
+
+      <strong>Resultat: </strong><br />
+      <span> <input type="number" id="Resultat s" /><br /><br /> </span>
+      <h2>sport:</h2>
+      <div>TP1:</div>
+      <span> <input type="number" id="controlesp" /><br /><br /> </span>
+      <div>TP2:</div>
+      <span> <input type="number" id="Synthésesp" /><br /><br /> </span>
+      <span>
+        <input
+          class="inputbutton"
+          type="button"
+          value="calcul"
+          onclick="calculerport()"
+        /><br />
+      </span>
+      <div>Resultat1:</div>
+      <span> <input type="number" id="Resultat spo1" /><br /><br /> </span>
+      <div>Resultat2:</div>
+      <span> <input type="number" id="Resultat spo2" /><br /><br /> </span>
+      <h2>option:</h2>
+      <div>Orale:</div>
+      <span> <input type="number" id="Oraleop" /><br /><br /> </span>
+      <div>controle:</div>
+      <span> <input type="number" id="controleop" /><br /><br /> </span>
+      <div>Synthése:</div>
+      <span> <input type="number" id="Synthéseop" /><br /><br /> </span>
+      <input type="button" value="calcul" onclick="calculeroption()" /><br />
+      <strong>Resultat: </strong><br />
+      <span> <input type="number" id="Resultat op" /><br /><br /> </span>
+      <hr />
+      <hr />
+      <input
+        type="button" class="inputbutton" value="calculer"
+        onclick="calculerMOYtr1(resar,resfr,reseg,resM,resphy,synthésephyl,reshis,resjogh,resprog,ressti,controlesport,synthésesport,resoption)"/><br /><br />
+      <p class="tr1">TRIMESTER</p>
+      <span>
+        <input type="number" id="tr1" />
+      </span>
+      <br /><br />
+      <input class="reset" type="reset" />
+    </form>
+    <footer>
+      <p>
+        <mark>
+          (عند حساب معدلك اضف 0.79)ملاحظة update...
+          <p>
+            <strong> سيتم اضافة 0.79 تلقائيا </strong>
+          </p>
+        </mark>
+      </p>
+    </footer>
+    <p class="email">
+      email:chamem50149280@gmail.com
+    </p>
+  </body>
+</html>

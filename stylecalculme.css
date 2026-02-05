@@ -1,0 +1,113 @@
+body {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(
+    270deg,
+    #330000,
+    #7873f5,
+    #d65600
+  );
+  background-size: 600% 600%;
+  animation: gradientMove 12s ease infinite;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.ig-icon {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.ig-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.ig-icon:hover {
+  color: #E1306C; /* Instagram pink */
+  transform: scale(1.1);
+}
+h1 {
+  font-size: 60px;
+  font-family: fantasy;
+  color: green;
+  box-shadow: 30px;
+  text-decoration: underline;
+  text-shadow: 50px;
+}
+h2 {
+  color: rgb(158, 158, 255);
+}
+div {
+  color: rgba(39, 39, 39, 0.966);
+  text-decoration: underline;
+  font-family: fantasy;
+}
+.tr1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(0, 255, 191);
+  text-decoration: underline;
+}
+span{
+    width: 120px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 12px;
+  border: 2px solid #9e0404;
+  background: linear-gradient(145deg, #e00000, #004ce4);
+  color: #111827;
+  transition: 
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.2s ease;
+    
+}
+span:focus{
+    outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.3);
+  transform: scale(1.08);
+}
+.h2moy{
+    color: rgb(255, 0, 0);
+    border-radius: 40px;
+    text-decoration: underline;
+}
+.inputbutton{
+    background-color: #d64f00; 
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.reset{
+    background-color: #ff0000; 
+  color: #000000;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.email{
+  text-align: left;
+  font-size: 20px;
+  font-family: cursive;
+}
