@@ -1,0 +1,110 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #666666;
+}
+
+/* Calculator Container */
+.calculator {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  width: 320px;
+}
+
+/* Display Screen */
+.display1{
+    color: red;
+    text-align: center;
+}
+.display {
+  width: 100%;
+  height: 80px;
+  background-color: #2d2d2d;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-align: right;
+  padding: 20px;
+  font-size: 2rem;
+  outline: none;
+}
+
+/* Button Grid Layout */
+input {
+  height: 60px;
+  border-radius: 12px;
+  border: none;
+  background-color: #333;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* Common Button Styles */
+button {
+  height: 60px;
+  border-radius: 12px;
+  border: none;
+  background-color: #333;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Operator Colors */
+.operator {
+  background-color: #00e759;
+  color: white;
+}
+
+.operator:hover {
+  background-color: #e67e22;
+}
+
+/* Special Functions (Clear/Equal) */
+.clear {
+  background-color: #e74c3c;
+  grid-column: span 2; /* Makes the AC button wider */
+}
+
+.equal {
+  background-color: #27ae60;
+  grid-column: span 2;
+}
+
+.clear:hover {
+  background-color: #c0392b;
+}
+.equal:hover {
+  background-color: #2ecc71;
+}
